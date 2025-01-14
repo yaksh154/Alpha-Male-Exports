@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hero Page</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="./assets/js/script.js"></script>
+
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							dancing: ["Dancing Script", "cursive"],
+							raleway: ["Raleway", "sans-serif"],
+						},
+						screens: {
+							xs: "375px",
+							"2xl": "1440px",
+						},
+					},
+				},
+			};
+		</script>
+
+		<link rel="stylesheet" href="./css/Home.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+			integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+			integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<style>
+			@media (max-width: 768px) {
+				.responsive-bg {
+					background-size: 300px;
+				}
+			}
+			@media (min-width: 769px) {
+				.responsive-bg {
+					background-size: 400px;
+				}
+			}
+			@media (max-width: 375px) {
+				.custom-image {
+					height: 200px !important;
+					/* Height for 375px screens */
+				}
+			}
+
+			@media (min-width: 376px) and (max-width: 768px) {
+				.custom-image {
+					height: 250px !important;
+					/* Height for tablets */
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Hero Section -->
+		<div
+			class="hero-sec bg-[#CA3D26] text-white relative"
+			style="padding: 150px 0"
+		>
+			<!-- Header -->
+			<header class="absolute top-0 left-0 right-0 z-50">
+				<div class="container mx-auto px-4">
+					<div
+						class="flex items-center justify-between bg-white rounded-[0_0_20px_20px] px-6 py-4"
+					>
+						<!-- Logo (Left) -->
+						<div class="flex-shrink-0">
+							<a href="javascript:void(0)" class="max-sm:hidden">
+								<img
+									src="./Images/HomePage/Logo.png"
+									alt="logo"
+									class="w-auto h-12"
+								/>
+							</a>
+							<a
+								href="javascript:void(0)"
+								class="hidden max-sm:block"
+							>
+								<img
+									src="./Images/HomePage/Logo.png"
+									alt="logo"
+								/>
+							</a>
+						</div>
+
+						<!-- Navigation Menu (Center) -->
+						<div
+							id="collapseMenu"
+							class="max-2xl:hidden 2xl:!block max-2xl:before:fixed max-2xl:before:bg-black max-2xl:before:opacity-50 max-2xl:before:inset-0 max-2xl:before:z-50"
+						>
+							<ul
+								class="2xl:flex gap-x-5 max-2xl:space-y-3 font-raleway max-2xl:fixed max-2xl:bg-white max-2xl:w-1/2 max-2xl:min-w-[300px] max-2xl:top-0 max-2xl:left-0 max-2xl:p-6 max-2xl:h-full max-2xl:shadow-md max-2xl:overflow-auto z-50"
+							>
+								<!-- Mobile Header: Logo and Close Button -->
+								<li
+									class="xl:hidden mb-4 flex items-center justify-between"
+								>
+									<a
+										href="javascript:void(0)"
+										class="flex-shrink-0"
+									>
+										<img
+											src="./Images/HomePage/Logo.png"
+											alt="logo"
+											class="w-36"
+										/>
+									</a>
+									<button
+										id="toggleClose"
+										class="rounded-full bg-white w-9 h-9 flex items-center justify-center border hover:bg-gray-100"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="w-3.5 h-3.5 fill-[#CA3D26]"
+											viewBox="0 0 320.591 320.591"
+										>
+											<path
+												d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+											></path>
+											<path
+												d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+											></path>
+										</svg>
+									</button>
+								</li>
+
+								<li
+									class="max-xl:border-b border-gray-300 border-dashed max-xl:py-3 px-3"
+								>
+									<a
+										href="javascript:void(0)"
+										class="font-semibold text-[17px] text-[#000] relative xl:after:absolute xl:after:w-full xl:after:h-0.5 xl:after:bg-[#CA3D26] xl:after:left-0 xl:after:-bottom-1"
+									>
+										Home
+									</a>
+								</li>
+								<li
+									class="max-xl:border-b border-gray-300 border-dashed max-xl:py-3 px-3"
+								>
+									<a
+										href="javascript:void(0)"
+										class="font-medium text-[17px] text-gray-500 hover:text-[#000] relative lg:after:absolute lg:after:w-0 lg:after:h-0.5 lg:after:bg-[#CA3D26] lg:after:left-0 lg:after:-bottom-1 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300"
+									>
+										About Us
+									</a>
+								</li>
+								<li
+									class="max-xl:border-b border-gray-300 border-dashed max-xl:py-3 px-3"
+								>
+									<a
+										href="javascript:void(0)"
+										class="font-medium text-[17px] text-gray-500 hover:text-[#000] relative lg:after:absolute lg:after:w-0 lg:after:h-0.5 lg:after:bg-[#CA3D26] lg:after:left-0 lg:after:-bottom-1 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300"
+									>
+										Product
+									</a>
+								</li>
+								<li
+									class="max-xl:border-b border-gray-300 border-dashed max-xl:py-3 px-3"
+								>
+									<a
+										href="javascript:void(0)"
+										class="font-medium text-[17px] text-gray-500 hover:text-[#000] relative lg:after:absolute lg:after:w-0 lg:after:h-0.5 lg:after:bg-[#CA3D26] lg:after:left-0 lg:after:-bottom-1 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300"
+									>
+										Blog
+									</a>
+								</li>
+								<li
+									class="max-xl:border-b border-gray-300 border-dashed max-xl:py-3 px-3"
+								>
+									<a
+										href="javascript:void(0)"
+										class="font-medium text-[17px] text-gray-500 hover:text-[#000] relative lg:after:absolute lg:after:w-0 lg:after:h-0.5 lg:after:bg-[#CA3D26] lg:after:left-0 lg:after:-bottom-1 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300"
+									>
+										Contact Us
+									</a>
+								</li>
+
+								<!-- Mobile Only: Contact Info and Social Icons -->
+								<li class="xl:hidden px-3 py-4 mt-4">
+									<!-- <span class="block text-gray-700 font-medium mb-4">+91 8128128181</span> -->
+									<div class="flex space-x-3">
+										<a
+											href="#"
+											class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]"
+										>
+											<i class="fab fa-facebook-f"></i>
+										</a>
+										<a
+											href="#"
+											class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]"
+										>
+											<i class="fab fa-twitter"></i>
+										</a>
+										<a
+											href="#"
+											class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]"
+										>
+											<i class="fab fa-youtube"></i>
+										</a>
+										<a
+											href="#"
+											class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]"
+										>
+											<i class="fab fa-instagram"></i>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Contact & Social (Right) - Desktop Only -->
+						<div
+							class="hidden 2xl:flex items-center space-x-6 font-raleway"
+						>
+							<span
+								class="text-gray-700 font-semibold hover:text-[#CA3D26]"
+								><a href="#">+91 8128128181</a></span
+							>
+							<div class="flex space-x-3">
+								<a
+									href="#"
+									class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]"
+								>
+									<i class="fab fa-facebook-f"></i>
+								</a>
+								<a
+									href="#"
+									class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]"
+								>
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a
+									href="#"
+									class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]"
+								>
+									<i class="fab fa-youtube"></i>
+								</a>
+								<a
+									href="#"
+									class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]"
+								>
+									<i class="fab fa-instagram"></i>
+								</a>
+							</div>
+						</div>
+
+						<!-- Mobile Menu Button - Hidden on 2xl screens -->
+						<button
+							id="toggleOpen"
+							class="max-2xl:block hidden bg-[#FDF4E4] text-[#CA3D26] px-3 py-3 rounded-md hover:bg-[#a32e1c] hover:text-[#FDF4E4]"
+						>
+							<i class="fa-solid fa-bars-staggered"></i>
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<!-- Hero Content -->
+			<div class="relative w-full bg-cover bg-center">
+				<div>
+					<!-- Grid Layout -->
+					<div
+						class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
+					>
+						<!-- Left Content -->
+						<div
+							class="z-10 px-5 lg:text-left order-2 lg:order-1 xl:ps-44"
+						>
+							<h2
+								class="text-[#FEC007] font-dancing text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4"
+							>
+								Welcome To
+								<img
+									src="./Images/HomePage/welcome2.png"
+									alt="chili"
+									class="inline-block w-8 sm:w-10 md:w-12 h-auto ml-2"
+								/>
+							</h2>
+							<h1
+								class="text-white font-raleway text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+							>
+								Alpha Male exports
+							</h1>
+							<p
+								class="text-white/80 text-base sm:text-lg max-w-xl lg:mx-0 font-raleway mb-20"
+							>
+								Lorem Ipsum is simply dummy text of the printing
+								and typesetting industry. Lorem Ipsum has been
+								the industry's standard.
+							</p>
+
+							<!-- Navigation Controls -->
+							<div class="flex lg:justify-start gap-6">
+								<button
+									class="text-white/60 hover:text-white uppercase text-sm tracking-wider"
+									onclick="prevSlide()"
+								>
+									PREV
+								</button>
+								<div class="flex items-center gap-4">
+									<div
+										class="h-[2px] w-16 sm:w-20 bg-[#FEC007]"
+									></div>
+									<span class="text-[#FEC007] font-bold"
+										>01</span
+									>
+									<div
+										class="h-[2px] w-16 sm:w-20 bg-white/20"
+									></div>
+								</div>
+								<button
+									class="text-white/60 hover:text-white uppercase text-sm tracking-wider"
+									onclick="nextSlide()"
+								>
+									NEXT
+								</button>
+							</div>
+						</div>
+
+						<!-- Right Content -->
+						<div class="order-1 lg:order-2">
+							<!-- Main Image -->
+							<img
+								src="./Images/HomePage/wel.png"
+								alt="Spices"
+								class="w-full h-auto object-cover"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Welcome Section Start-->
+		<div class="py-6 mt-10">
+			<div
+				class="container mx-auto rounded-3xl py-12 bg-[#FDF4E4] bg-no-repeat bg-left-bottom md:bg-right-bottom responsive-bg"
+				style="
+					background-image: url('./Images/HomePage/Bowl-image.png');
+				"
+			>
+				<div
+					class="grid grid-cols-1 items-center max-lg:space-y-6 px-8"
+				>
+					<!-- Content Column -->
+					<div
+						class="flex flex-col max-lg:items-center justify-center max-lg:text-center px-4 lg:ps-10"
+					>
+						<h1
+							class="text-[40px] max-lg:text-[38px] max-md:text-[26px] leading-tight mb-4 text-center"
+						>
+							<span
+								class="text-[#CA3D26] font-bold pe-1"
+								style="font-family: 'Dancing Script', cursive"
+								>Welcome To
+							</span>
+							<span
+								class="text-[#010101] font-bold"
+								style="font-family: 'Raleway', sans-serif"
+								>Alpha Male exports at glance</span
+							>
+						</h1>
+						<p
+							class="text-[#616161] text-[18px] font-medium font-raleway mb-6 py-2 max-md:text-[12px] leading-[30px]"
+							style="font-family: 'Raleway', sans-serif"
+						>
+							Alpha Male exports is a well-known exporter and
+							supplier of a variety of agro-food products. A wide
+							range of agricultural items are offered by our
+							Gujrat, India-based company, including spices,
+							non-basmati rice, fresh potato, red potato, pink
+							potato, and maize. Our business offers the greatest
+							and highest-quality agricultural supplies and
+							agricultural Products at cheap prices. The savvy
+							management of our company build a solid name in the
+							food and Spices industries in recent years. While
+							exporting goods to a number of countries, we
+							guarantee high-quality products by implementing
+							stringent quality control measures before to sending
+							them to the consumers. Various Food Products We
+							offer a variety of agricultural products..
+						</p>
+						<!-- Centered a Tag -->
+						<div class="flex justify-center">
+							<a
+								href="#"
+								class="group text-[#CA3D26] font-semibold inline-flex items-center text-center hover:px-6 py-2.5 hover:rounded-full hover:border-2 hover:border-[#CA3D26] hover:shadow-[0_0_15px_rgba(202,61,38,0.5)] transition-all duration-300 w-fit"
+							>
+								<img
+									src="./Images/HomePage/ArrowRight.png"
+									alt="ArrowRight"
+									class="mr-3 transform group-hover:translate-x-1 transition-transform duration-300"
+								/>
+								Learn More
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Welcome Section End -->
+
+		<!-- What Makes Us Strong Start -->
+
+		<!-- Video and Features Combined Section -->
+		<div class="container mx-auto px-4 py-12">
+			<div class="grid lg:grid-cols-2 gap-8 items-center relative">
+				<!-- Left Side: Features Grid -->
+				<div class="relative lg:p-10 order-2 :order-1">
+					<!-- Background with triangle shape - hidden on mobile -->
+					<div class="hidden lg:block absolute inset-0 -z-10 w-3/4">
+						<img
+							src="./Images/HomePage/featuresbg.png"
+							alt="Background Shape"
+							class="object-cover"
+						/>
+					</div>
+					<!-- Features Grid - visible on all screens -->
+					<div class="grid grid-cols-2 gap-6">
+						<!-- Feature 1 -->
+						<div
+							class="flex flex-col items-center text-center p-4 py-6 md:py-12 rounded-lg bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition-shadow duration-300"
+						>
+							<div
+								class="rounded-full w-20 h-20 flex items-center justify-center mb-4"
+							>
+								<img
+									src="./Images/HomePage/Contact-Farming.png"
+									alt="Contract Farming"
+								/>
+							</div>
+							<h3
+								class="font-raleway font-bold text-sm sm:text-lg md:text-xl hover:text-[#CA3D26] cursor-pointer"
+							>
+								Contract Farming
+							</h3>
+						</div>
+						<!-- Feature 2 -->
+						<div
+							class="flex flex-col items-center text-center p-4 py-6 md:py-12 rounded-lg bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition-shadow duration-300"
+						>
+							<div
+								class="rounded-full w-20 h-20 flex items-center justify-center mb-4"
+							>
+								<img
+									src="./Images/HomePage/Farm.png"
+									alt="Farm to Fork"
+								/>
+							</div>
+							<h3
+								class="font-raleway font-bold text-sm sm:text-lg md:text-xl hover:text-[#FEC007] cursor-pointer"
+							>
+								Farm to Fork
+							</h3>
+						</div>
+						<!-- Feature 3 -->
+						<div
+							class="flex flex-col items-center text-center p-4 py-6 md:py-12 rounded-lg bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition-shadow duration-300"
+						>
+							<div
+								class="rounded-full w-20 h-20 flex items-center justify-center mb-4"
+							>
+								<img
+									src="./Images/HomePage/Natural.png"
+									alt="Natural Flavor"
+								/>
+							</div>
+							<h3
+								class="font-raleway font-bold text-sm sm:text-lg md:text-xl hover:text-[#FEC007] cursor-pointer"
+							>
+								Natural Flavor
+							</h3>
+						</div>
+						<!-- Feature 4 -->
+						<div
+							class="flex flex-col items-center text-center p-4 py-6 md:py-12 rounded-lg bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition-shadow duration-300"
+						>
+							<div
+								class="rounded-full w-20 h-20 flex items-center justify-center mb-4"
+							>
+								<img
+									src="./Images/HomePage/Customized.png"
+									alt="Customized Package"
+								/>
+							</div>
+							<h3
+								class="font-raleway font-bold text-sm sm:text-lg md:text-xl hover:text-[#CA3D26] cursor-pointer"
+							>
+								Customized Package
+							</h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Right Side: Heading and Video -->
+				<div class="px-0 lg:px-0 order-1 md:order-2">
+					<h2
+						class="text-2xl sm:text-3xl md:text-4xl text-center md:text-start font-bold mb-6 sm:mb-8"
+					>
+						<span
+							class="text-[#CA3D26] font-bold"
+							style="font-family: 'Dancing Script', cursive"
+							>What Makes</span
+						>
+						<span class="font-raleway text-[#010101]">
+							Us Strong?</span
+						>
+					</h2>
+					<!-- Video Container -->
+					<div class="relative">
+						<video
+							id="myVideo"
+							class="w-full rounded-xl object-cover shadow-lg h-[250px] sm:h-[300px] md:h-[350px]"
+							poster="./Images/HomePage/videobanner.png"
+						>
+							<source
+								src="./Images/HomePage/sample-video.mp4"
+								type="video/mp4"
+							/>
+							Your browser does not support the video tag.
+						</video>
+						<!-- Overlay -->
+						<div
+							id="videoOverlay"
+							class="absolute inset-0 bg-black opacity-50 rounded-xl pointer-events-none"
+						></div>
+						<!-- Play Button -->
+						<button
+							id="playButton"
+							class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 bg-white rounded-full shadow-lg hover:scale-110 transition duration-300 flex items-center justify-center cursor-pointer"
+						>
+							<img
+								src="./Images/HomePage/play.png"
+								alt="Play Button"
+								class="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10"
+							/>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- What Makes Us Strong End -->
+
+		<!-- Why Chhose Us Section Start -->
+		<section class="bg-[#FDF4E4] py-20 relative">  
+            <img src="images/index/why-choose-us-bg.png" alt="" class="absolute top-0">
+            <img src="images/index/floating_leaf1.png" alt="" class="absolute top-[5%] w-[20px] lg:w-auto lg:top-[20%] left-[15%]">
+            <img src="images/index/floating_leaf2.png" alt="" class="absolute top-[5%] w-[20px] lg:w-auto lg:top-[20%] right-[15%]">
+            <!-- Content --> 
+                <div class="container mx-auto px-4">
+                    <h2 class="text-center text-3xl lg:text-5xl leading-10 pb-4 lg:pb-32 font-bold"> <span class="text-[#CA3D26]" style="font-family: 'Dancing Script'"> Why </span>Choose Us?</h2>
+                    <div class="flex-wrap lg:flex-nowrap flex justify-evenly ">
+                        <!-- Item 2 -->
+                        <div class="block w-1/2  justify-items-center lg:w-auto">
+                            <div class="mt-10 relative">
+                                <div class="absolute bottom-[100%] right-[20%] lg:right-[-10%]">
+                                   <h4 class="text-3xl lg:text-8xl font-semibold text-[#e4dccd] font-raleway"  >01</h4>
+                                </div>
+                                <img src="./Images/HomePage/why-choose-us1.png" alt=" " class="w-[40px] md:w-[60px] lg:w-auto inline mx-auto me-1 lg:me-3" />
+                                <h4 class="text-sm md:text-xl lg:text-2xl font-bold inline" style="font-family: 'Raleway'">Available 24*7</h4>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="block w-1/2 justify-items-center lg:w-auto">
+                            <div class="mt-10 relative">
+                                <div class="absolute bottom-[100%] right-[20%] lg:right-[-10%]">
+                                   <h4 class="text-3xl lg:text-8xl font-semibold text-[#e4dccd] font-raleway">02</h4>
+                                </div>
+                                <img src="./Images/HomePage/why-choose-us2.png" alt=" " class="w-[40px] md:w-[60px] lg:w-auto inline mx-auto me-1 lg:me-3" />
+                                <h4 class="text-sm md:text-xl lg:text-2xl font-bold inline" style="font-family: 'Raleway'">Best Quality</h4>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="block w-full justify-items-center lg:w-auto">
+                            <div class="mt-10 relative">
+                                <div class="absolute bottom-[100%] right-[20%] lg:right-[-10%]">
+                                   <h4 class="text-3xl lg:text-8xl font-semibold text-[#e4dccd] font-raleway">03</h4>
+                                </div>
+                                <img src="./Images/HomePage/why-choose-us3.png" alt=" " class="w-[40px] md:w-[60px] lg:w-auto inline mx-auto me-1 lg:me-3" />
+                                <h4 class="text-sm md:text-xl lg:text-2xl font-bold inline" style="font-family: 'Raleway'">Organic Products</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+		<!-- Why Chhose Us Section End -->
+
+		<!-- We Export all kind of spices section start -->
+
+		<div class="py-10 lg:py-16">
+			<div class="container mx-auto px-4">
+				<div
+					class="grid lg:grid-cols-2 gap-0 lg:gap-16 xl:gap-28 max-lg:space-y-4"
+				>
+					<!-- Text Column -->
+					<div
+						class="flex flex-col justify-center lg:text-start px-2 bg-no-repeat bg-left-bottom md:bg-left-bottom responsive-bg"
+						style="
+							background-image: url('./Images/HeroPage/Bowl-image.png');
+						"
+					>
+						<h1
+							class="text-[24px] md:text-[30px] lg:text-[40px] ] leading-normal mb-4"
+						>
+							<span
+								class="text-[#CA3D26] font-bold"
+								style="font-family: 'Dancing Script'"
+								>We export</span
+							>
+							<span
+								class="text-[#010101] font-bold"
+								style="font-family: 'Raleway'"
+							>
+								all kinds of Spices, Rice, and other Commodities
+								across the world.
+							</span>
+						</h1>
+						<p
+							class="text-[#616161] text-[18px] max-sm:text-[14px] font-medium mb-6 leading-[30px] max-sm:leading-[24px]"
+						>
+							Feel free to contact us for the bulk pricing and
+							shipping.
+						</p>
+					</div>
+
+					<!-- Image Column -->
+					<div class="grid grid-cols-2 gap-6">
+						<img
+							src="./Images/HomePage/Redchilli.png"
+							alt="Red Chilli"
+							class="max-h-[161px] sm:max-h-[200px] md:max-h-[280px] lg:max-h-[373px] w-full object-cover rounded-3xl shadow-md"
+						/>
+						<img
+							src="./Images/HomePage/Maize.png"
+							alt="Maize"
+							class="max-h-[161px] sm:max-h-[200px] md:max-h-[280px] lg:max-h-[373px] w-full object-cover rounded-3xl shadow-md"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- We Export all kind of spices section end -->
+
+		<!-- Client Review Section Start-->
+		<div class="container mx-auto px-4 py-10 md:py-20">
+			<h1
+				class="text-[40px] max-lg:text-[38px] max-md:text-[26px] leading-tight mb-4 text-center font-bold"
+			>
+				<span
+					style="font-family: 'Dancing Script', cursive"
+					class="text-[#CA3D26]"
+				>
+					What
+				</span>
+				<span style="font-family: 'Raleway'">Our Client Say !</span>
+			</h1>
+
+			<div class="🥙">
+				<div class="swiper-full pb-6" style="min-height: 503px">
+					<div class="swiper-wrapper md:pt-2 pb-6">
+						<div
+							class="swiper-slide grid md:grid-cols-3 p-8 gap-6 bg-[#FDF4E4] rounded-3xl"
+							style="font-family: 'Raleway'"
+						>
+							<div class="flex items-center justify-between">
+								<img
+									src="./Images/HomePage/client3.png"
+									class="h-[150px] md:h-full rounded-xl"
+								/>
+								<img
+									src="./Images/HomePage/double quotes.png"
+									height="40px"
+									width="40px"
+									class="block md:hidden ms-16"
+								/>
+							</div>
+							<div class="flex flex-col col-span-2">
+								<div class="flex justify-between">
+									<img
+										src="./Images/HomePage/double quotes.png"
+										height="70px"
+										width="80px"
+										class="pb-8 hidden md:block"
+									/>
+									<img
+										src="./Images/HomePage/dots-img.png"
+										height="70px"
+										width="80px"
+										class="pb-8 hidden md:block"
+									/>
+								</div>
+
+								<p
+									class="text-left text-[14px] lg:text-[20px] leading-[30px] lg:leading-[36.09px] text-[#616161] font-medium"
+								>
+									Lorem Ipsum is simply dummy text of the
+									printing and typesetting industry. Lorem
+									Ipsum has been the industry's standard dummy
+									text ever since the 1500s, when an unknown
+									printer took a galley of type and scrambled
+									it<span class="hidden md:block">
+										to make a type specimen book. It has
+										survived not only five centuries, but
+										also the leap into electronic
+										typesetting, remaining essentially
+										unchanged.</span
+									>
+								</p>
+
+								<div class="flex justify-between">
+									<p
+										class="text-left mt-6 font-bold text-[30px]"
+									>
+										Cody Fisher
+									</p>
+									<img
+										src="./Images/HomePage/dots-img.png"
+										height="30px"
+										width="40px"
+										class="pt-3 md:hidden block"
+									/>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="swiper-slide grid md:grid-cols-3 p-8 gap-6 bg-[#FDF4E4] rounded-3xl"
+							style="font-family: 'Raleway'"
+						>
+							<div class="flex items-center justify-between">
+								<img
+									src="./Images/HomePage/client1.jpg"
+									class="h-[150px] md:h-full rounded-xl"
+								/>
+								<img
+									src="./Images/HomePage/double quotes.png"
+									height="40px"
+									width="40px"
+									class="block md:hidden ms-16"
+								/>
+							</div>
+							<div class="flex flex-col col-span-2">
+								<div class="flex justify-between">
+									<img
+										src="./Images/HomePage/double quotes.png"
+										height="70px"
+										width="80px"
+										class="pb-8 hidden md:block"
+									/>
+									<img
+										src="./Images/HomePage/dots-img.png"
+										height="70px"
+										width="80px"
+										class="pb-8 hidden md:block"
+									/>
+								</div>
+								<p
+									class="text-left text-[14px] lg:text-[20px] leading-[30px] lg:leading-[36.09px] text-[#616161] font-medium"
+								>
+									Lorem Ipsum is simply dummy text of the
+									printing and typesetting industry. Lorem
+									Ipsum has been the industry's standard dummy
+									text ever since the 1500s, when an unknown
+									printer took a galley of type and scrambled
+									it<span class="hidden md:block">
+										to make a type specimen book. It has
+										survived not only five centuries, but
+										also the leap into electronic
+										typesetting, remaining essentially
+										unchanged.</span
+									>
+								</p>
+
+								<div class="flex justify-between">
+									<p
+										class="text-left mt-6 font-bold text-[30px]"
+									>
+										Cody Fisher
+									</p>
+									<img
+										src="./Images/HomePage/dots-img.png"
+										height="30px"
+										width="40px"
+										class="pt-3 md:hidden block"
+									/>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="swiper-slide grid md:grid-cols-3 p-8 gap-6 bg-[#FDF4E4] rounded-3xl"
+							style="font-family: 'Raleway'"
+						>
+							<div class="flex items-center justify-between">
+								<img
+									src="./Images/HomePage/client2.jpg"
+									class="h-[150px] md:h-full rounded-xl"
+								/>
+								<img
+									src="./Images/HomePage/double quotes.png"
+									height="40px"
+									width="40px"
+									class="block md:hidden ms-16"
+								/>
+							</div>
+							<div class="flex flex-col col-span-2">
+								<div class="flex justify-between">
+									<img
+										src="./Images/HomePage/double quotes.png"
+										height="70px"
+										width="80px"
+										class="pb-8 hidden md:block"
+									/>
+									<img
+										src="./Images/HomePage/dots-img.png"
+										height="70px"
+										width="80px"
+										class="pb-8 hidden md:block"
+									/>
+								</div>
+								<p
+									class="text-left text-[14px] lg:text-[20px] leading-[30px] lg:leading-[36.09px] text-[#616161] font-medium"
+								>
+									Lorem Ipsum is simply dummy text of the
+									printing and typesetting industry. Lorem
+									Ipsum has been the industry's standard dummy
+									text ever since the 1500s, when an unknown
+									printer took a galley of type and scrambled
+									it<span class="hidden md:block">
+										to make a type specimen book. It has
+										survived not only five centuries, but
+										also the leap into electronic
+										typesetting, remaining essentially
+										unchanged.</span
+									>
+								</p>
+								<div class="flex justify-between">
+									<p
+										class="text-left mt-6 font-bold text-[30px]"
+									>
+										Cody Fisher
+									</p>
+									<img
+										src="./Images/HomePage/dots-img.png"
+										height="30px"
+										width="40px"
+										class="pt-3 md:hidden block"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-pagination mt-4"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Client Review Section End-->
+
+		<!-- Why the indian market section start -->
+		<div class="container mx-auto px-4 pb-20 ">
+			<div>
+				<h2 class="font-bold text-[30px] lg:text-[40px] leading-[60px] pt-20 pb-28 px-4 text-center "> 
+					<span class="pe-1 text-[#CA3D26] " style="font-family: 'Dancing Script';">Why</span>
+					<span  style="font-family: raleway;" >The Indian Market is Best? </span>
+				</h2>
+			</div>
+			<div class="grid lg:grid-cols-2 lg:gap-8 sm:gap-4 max-lg:space-y-6 relative px-10">
+				<img src="./Images/HomePage//Home/Home_page9.png" alt="" class=" sm:w-[236.73px] sm:h-[130.15px] sm:w-[270.73px] sm:h-[160.15px] lg:h-[324px] lg:w-[423px] object-cover absolute sm:left-[-20px] sm:top-[530px] md:top-[450px] md:left-[-210px] lg:top-32 lg:left-[-200px] z-[-1]">
+				<img src="./Images/HomePage/Home/Home_page8.png" alt="" class="custom-image sm:w-[410px] md:w-[493.5px] md:h-[474.5px] lg:w-[593.5px] lg:h-[574.5px] object-cover absolute top-[-60px] right-[-15px] z-[-1]">
+				<div class="flex flex-col justify-center max-lg:text-start p-10 bg-[white] rounded-[17px]" style="box-shadow: 0px 0px 13px 0px #B5B1B140;">
+					<h2 class="font-bold text-[24px] leading-[28.18px] text-[#CA3D26] mb-6" style="font-family: 'Raleway';">Agriculture Base</h2>
+					<p class="text-[#616161] text-[18px] font-medium leading-[36.09px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				</div>
+				<div class="flex flex-col justify-center max-lg:text-start p-10 bg-[white] rounded-[17px]" style="box-shadow: 0px 0px 13px 0px #B5B1B140;">
+					<h2 class="font-bold text-[24px] leading-[28.18px] text-[#CA3D26] mb-6" style="font-family: 'Raleway';">Affordable Rates</h2>
+					<p class="text-[#616161] text-[18px] font-medium leading-[36.09px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				</div>
+				<div class="flex flex-col justify-center max-lg:text-start p-10 bg-[white] rounded-[17px] hidden sm:hidden lg:block" style="box-shadow: 0px 0px 13px 0px #B5B1B140;">
+					<h2 class="font-bold text-[24px] leading-[28.18px] text-[#CA3D26] mb-6" style="font-family: 'Raleway';">Technology And Innovation</h2>
+					<p class="text-[#616161] text-[18px] font-medium leading-[36.09px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				</div>
+				<div class="flex flex-col justify-center max-lg:text-start p-10 bg-[white] rounded-[17px] hidden sm:hidden lg:block" style="box-shadow: 0px 0px 13px 0px #B5B1B140;">
+					<h2 class="font-bold text-[24px] leading-[28.18px] text-[#CA3D26] mb-6" style="font-family: 'Raleway';">Best Quality Food Products</h2>
+					<p class="text-[#616161] text-[18px] font-medium leading-[36.09px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				</div>
+			</div>
+		</div>
+		<!-- Why the indian market section end -->
+
+		<!-- Footer Start -->
+		<div
+			style="
+				background-image: url('./Images/Footer-Images/Footer-bg1.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-color: #ca3d26;
+
+				background-blend-mode: overlay; /* Blend the color and image */
+			"
+		>
+			<div class="container mx-auto px-4 py-3">
+				<div class="grid grid-cols-2 md:grid-cols-3 gap-y-4">
+					<div class="flex justify-center items-center flex-col py-4">
+						<img
+							src="./Images/Footer-Images/Footer-icon-1.png"
+							alt="footer-img"
+							class="mb-2"
+						/>
+						<p class="text-white font-semibold text-center">
+							Global Exporter
+						</p>
+					</div>
+					<div class="flex justify-center items-center flex-col">
+						<img
+							src="./Images/Footer-Images/Footer-icon-2.png"
+							alt="footer-img"
+							class="mb-2"
+						/>
+						<p class="text-white font-semibold text-center">
+							Customer Relation
+						</p>
+					</div>
+					<div
+						class="flex justify-center items-center flex-col col-span-2 md:col-span-1"
+					>
+						<img
+							src="./Images/Footer-Images/Footer-icon-3.png"
+							alt="footer-img"
+							class="mt-4 mb:mt-0"
+						/>
+						<p class="text-white font-semibold text-center pt-4">
+							Fast Delivery
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Second row start -->
+		<div>
+			<div class="container mx-auto px-4 py-6">
+				<div
+					class="grid lg:grid-cols-2 gap-6 md:gap-10 lg:gap-20 xl:gap-40 border-b-2 border-black border-dashed py-10"
+				>
+					<!-- Left Section -->
+					<div>
+						<div>
+							<img
+								src="./Images/Footer-Images/Footer-logo.png"
+								alt="logo"
+								class="w-40 md:w-48 lg:w-64"
+							/>
+						</div>
+						<p
+							class="text-[16px] md:text-[18px] text-[#616161] font-medium my-5 leading-[28px] md:leading-[36.09px]"
+							style="font-family: 'Raleway'"
+						>
+							"ALPHA MALE EXPORTS" is one of the leading Gujarat
+							india Based company which activating in the field of
+							producing, Supplying and exporting of Basmati Rice,
+							Non Basmati Rice, Brown Rice, Indian Spices, Maize
+							etc agrituture products from the Gujarat India, we
+							are bulk exporters of agriculture product.
+						</p>
+					</div>
+
+					<!-- Right Section -->
+					<div
+						class="flex flex-col md:items-start pt-2 md:pt-2 lg:pt-16"
+					>
+						<!-- Contact and Email -->
+						<div
+							class="flex flex-row md:flex-row gap-10 md:gap-20 lg:gap-14"
+						>
+							<!-- Contact -->
+							<div>
+								<div class="flex items-center">
+									<img
+										src="./Images/Footer-Images/Contact.png"
+										alt="contact-icon"
+										class="w-8 md:w-10 h-8 md:h-10"
+									/>
+									<h2
+										class="py-2 px-2 font-bold text-lg md:text-xl"
+										style="font-family: 'Raleway'"
+									>
+										Contact
+									</h2>
+								</div>
+								<p
+									class="text-[#616161] font-semibold md:font-medium text-sm md:text-[18px] py-4"
+									style="font-family: 'Raleway'"
+								>
+									+91 8128128123
+								</p>
+							</div>
+
+							<!-- Email -->
+							<div>
+								<div class="flex items-center">
+									<img
+										src="./Images/Footer-Images/Email.png"
+										alt="email-icon"
+										class="w-8 md:w-10 h-8 md:h-10"
+									/>
+									<h2
+										class="py-2 px-2 font-bold text-lg md:text-xl"
+										style="font-family: 'Raleway'"
+									>
+										Email
+									</h2>
+								</div>
+								<p
+									class="text-[#616161] text-sm md:text-[18px] font-semibold md:font-medium py-4"
+									style="
+										word-break: break-all;
+										font-family: 'Raleway';
+									"
+								>
+									alphamaleexports@gmail.com
+								</p>
+							</div>
+						</div>
+
+						<!-- Location -->
+						<div class="py-6">
+							<div class="flex">
+								<img
+									src="./Images/Footer-Images/Location.png"
+									alt="location-icon"
+									class="w-8 md:w-10 h-8 md:h-10"
+								/>
+								<h2
+									class="px-2 font-bold text-lg md:text-xl"
+									style="font-family: 'Raleway'"
+								>
+									Location
+								</h2>
+							</div>
+							<p
+								class="text-[#616161] text-sm md:text-[18px] font-semibold md:font-medium mt-3"
+								style="font-family: 'Raleway'"
+							>
+								UG-28 ,Indira Lok Complex Piplod Surat Gujarat
+								PIN : 395007
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Navbar Section Start -->
+				<div
+					class="grid md:grid-cols-2 gap-6 md:gap-10 lg:gap-20 xl:gap-40 py-10"
+					style="font-family: 'Raleway'"
+				>
+					<div>
+						<h1 class="font-bold text-lg md:text-xl">Our Link</h1>
+						<ul
+							class="flex flex-row gap-4 md:gap-[10px] lg:gap-[30px] xl:gap-[50px] my-4 md:my-4 text-[#616161] text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-semibold md:font-medium"
+						>
+							<li>Home</li>
+							<li>About Us</li>
+							<li>Product</li>
+							<li>Blog</li>
+							<li>Contact Us</li>
+						</ul>
+					</div>
+
+					<div>
+						<h1 class="font-bold text-lg md:text-xl">Product</h1>
+						<ul
+							class="flex flex-row gap-4 md:gap-[10px] lg:gap-[30px] xl:gap-[50px] my-4 md:my-4 text-[#616161] text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-semibold md:font-medium"
+						>
+							<li>Bashmati Rice</li>
+							<li>Spices</li>
+							<li>Maize</li>
+							<li>Non Basmati Rice</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Navbar Section End -->
+			</div>
+		</div>
+
+		<!-- Second row end -->
+
+		<!-- Copyright Section Start -->
+		<div style="font-family: 'Raleway'" class="font-medium bg-[#FDF4E4]">
+			<div class="container mx-auto px-4 py-6 md:py-10">
+				<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+					<!-- Left Column: Copyright Text -->
+					<p
+						class="text-[#616161] text-[15px] font-semibold md:text-[16px] md:font-medium text-center md:text-left"
+					>
+						© Copyright 2022 by Signal Bytes Technologies
+					</p>
+
+					<!-- Right Column: Social Media Icons -->
+					<div class="flex justify-center md:justify-end gap-4">
+						<img
+							src="./Images/Footer-Images/Facebook-icon.png"
+							alt="Facebook-logo"
+							class="w-10 h-10 md:w-10 md:h-10"
+						/>
+						<img
+							src="./Images/Footer-Images/twitter-icon.png"
+							alt="Twitter-logo"
+							class="w-10 h-10 md:w-10 md:h-10"
+						/>
+						<img
+							src="./Images/Footer-Images/Youtube-icon.png"
+							alt="Youtube-logo"
+							class="w-10 h-10 md:w-10 md:h-10"
+						/>
+						<img
+							src="./Images/Footer-Images/Instagram-icon.png"
+							alt="Instagram-logo"
+							class="w-10 h-10 md:w-10 md:h-10"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			var toggleOpen = document.getElementById("toggleOpen");
+			var toggleClose = document.getElementById("toggleClose");
+			var collapseMenu = document.getElementById("collapseMenu");
+
+			function handleClick() {
+				if (collapseMenu.style.display === "block") {
+					collapseMenu.style.display = "none";
+				} else {
+					collapseMenu.style.display = "block";
+				}
+			}
+
+			toggleOpen.addEventListener("click", handleClick);
+			toggleClose.addEventListener("click", handleClick);
+
+			// Close menu when clicking outside
+			document.addEventListener("click", (e) => {
+				if (
+					!toggleOpen.contains(e.target) &&
+					!collapseMenu.contains(e.target)
+				) {
+					collapseMenu.style.display = "none";
+				}
+			});
+		</script>
+
+		<script>
+			const swiperFull = new Swiper(".swiper-full", {
+				//  autoplay: {
+				//  	delay: 3000,
+				//  },
+				slidesPerView: "auto",
+				centeredSlides: true,
+				spaceBetween: 32,
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					// dynamicBullets: true,
+					clickable: true,
+					renderBullet: function (index, className) {
+						return (
+							'<span class="' +
+							className +
+							'">' +
+							(index + 1) +
+							"</span>"
+						);
+					},
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+			$(".swiper-full").mouseenter(function () {
+				swiperFull.autoplay.stop();
+			});
+			$(".swiper-full").mouseleave(function () {
+				swiperFull.autoplay.start();
+			});
+		</script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const video = document.getElementById("myVideo");
+				const playButton = document.getElementById("playButton");
+				const overlay = document.getElementById("videoOverlay");
+
+				playButton.addEventListener("click", function () {
+					if (video.paused) {
+						video.play();
+						// Show video controls
+						video.controls = true;
+						// Hide play button and overlay
+						playButton.style.display = "none";
+						overlay.style.display = "none";
+					}
+				});
+
+				// Listen for video end
+				video.addEventListener("ended", function () {
+					// Reset video to start
+					video.currentTime = 0;
+					// Show play button and overlay
+					playButton.style.display = "flex";
+					overlay.style.display = "block";
+					// Hide video controls
+					video.controls = false;
+					// Load poster image
+					video.load();
+				});
+
+				// Listen for pause
+				video.addEventListener("pause", function () {
+					if (!video.ended) {
+						// Show play button and overlay
+						playButton.style.display = "flex";
+						overlay.style.display = "block";
+						// Load poster image if video is stopped
+						if (video.currentTime === 0) {
+							video.load();
+						}
+					}
+				});
+
+				// Listen for play
+				video.addEventListener("play", function () {
+					// Hide play button and overlay
+					playButton.style.display = "none";
+					overlay.style.display = "none";
+				});
+
+				// Listen for stop (when user seeks to beginning)
+				video.addEventListener("seeking", function () {
+					if (video.currentTime === 0) {
+						// Load poster image
+						video.load();
+						// Show play button and overlay
+						playButton.style.display = "flex";
+						overlay.style.display = "block";
+						// Hide video controls
+						video.controls = false;
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

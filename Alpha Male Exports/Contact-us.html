@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+     <!-- Hero Section -->
+     <div class="hero-sec bg-[#490341] text-white relative">
+      <!-- Header -->
+      <header class='absolute top-0 left-0 right-0 z-50'>
+        <div class='container mx-auto px-4'>
+            <div class='flex items-center justify-between bg-white rounded-[0_0_20px_20px] px-6 py-4'>
+                <!-- Logo (Left) -->
+                <div class="flex-shrink-0">
+                    <a href="javascript:void(0)" class="max-sm:hidden">
+                        <img src="./Images/HomePage/Logo.png" alt="logo" class="w-auto h-12" />
+                    </a>
+                    <a href="javascript:void(0)" class="hidden max-sm:block">
+                        <img src="./Images/HomePage/Logo.png" alt="logo" />
+                    </a>
+                </div>
+
+                <!-- Navigation Menu (Center) -->
+                <div id="collapseMenu"
+                    class='max-xl:hidden xl:!block max-xl:before:fixed max-xl:before:bg-black max-xl:before:opacity-50 max-xl:before:inset-0 max-xl:before:z-50'>
+                    <ul
+                        class='xl:flex gap-x-5 max-xl:space-y-3 font-raleway max-xl:fixed max-xl:bg-white max-xl:w-1/2 max-xl:min-w-[300px] max-xl:top-0 max-xl:left-0 max-xl:p-6 max-xl:h-full max-xl:shadow-md max-xl:overflow-auto z-50'>
+                        <!-- Mobile Header: Logo and Close Button -->
+                        <li class='xl:hidden mb-4 flex items-center justify-between'>
+                            <a href="javascript:void(0)" class="flex-shrink-0">
+                                <img src="./Images/HomePage/Logo.png" alt="logo" class='w-36' />
+                            </a>
+                            <button id="toggleClose"
+                                class='rounded-full bg-white w-9 h-9 flex items-center justify-center border hover:bg-gray-100'>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-[#CA3D26]"
+                                    viewBox="0 0 320.591 320.591">
+                                    <path
+                                        d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z">
+                                    </path>
+                                    <path
+                                        d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </li>
+
+                        <li class='max-xl:border-b border-gray-300 border-dashed max-xl:py-3 px-3'>
+                            <a href="Home.html"
+                                class="font-medium text-[17px] text-gray-500  hover:text-[#000] relative lg:after:absolute lg:after:w-0 lg:after:h-0.5 lg:after:bg-[#CA3D26] lg:after:left-0 lg:after:-bottom-1 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300"
+                                id="homeLink">
+                                Home
+                            </a>
+                        </li>
+                        <li class='max-xl:border-b border-gray-300 border-dashed max-xl:py-3 px-3'>
+                            <a href="About.html"
+                                class="font-medium text-[17px] text-gray-500 hover:text-[#000] relative lg:after:absolute lg:after:w-0 lg:after:h-0.5 lg:after:bg-[#CA3D26] lg:after:left-0 lg:after:-bottom-1 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300"
+                                id="aboutLink">
+                                About Us
+                            </a>
+                        </li>
+                        <li class='max-xl:border-b border-gray-300 border-dashed max-xl:py-3 px-3'>
+                            <a href="Product.html"
+                                class="font-medium text-[17px] text-gray-500 hover:text-[#000] relative lg:after:absolute lg:after:w-0 lg:after:h-0.5 lg:after:bg-[#CA3D26] lg:after:left-0 lg:after:-bottom-1 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300"
+                                id="productLink">
+                                Product
+                            </a>
+                        </li>
+                        <li class='max-xl:border-b border-gray-300 border-dashed max-xl:py-3 px-3'>
+                            <a href="Blog.html"
+                                class="font-medium text-[17px] text-gray-500 hover:text-[#000] relative lg:after:absolute lg:after:w-0 lg:after:h-0.5 lg:after:bg-[#CA3D26] lg:after:left-0 lg:after:-bottom-1 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300"
+                                id="blogLink">
+                                Blog
+                            </a>
+                        </li>
+                        <li class='max-xl:border-b border-gray-300 border-dashed max-xl:py-3 px-3'>
+                            <a href="Contact-us.html"
+                                class="font-bold text-[17px] text-black hover:text-[#000] relative lg:after:absolute lg:after:w-full lg:after:h-0.5 lg:after:bg-[#CA3D26] lg:after:left-0 lg:after:-bottom-1 lg:hover:after:w-full lg:after:transition-all lg:after:duration-300 active-nav-link"
+                                id="contactLink">
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <!-- Mobile Only: Contact Info and Social Icons -->
+                        <li class='xl:hidden px-3 py-4  mt-4'>
+                            <div class="flex space-x-3">
+                                <a href="#"
+                                    class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#"
+                                    class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#"
+                                    class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#"
+                                    class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social (Right) - Desktop Only -->
+                <div class='hidden xl:flex items-center space-x-6 font-raleway'>
+                    <span class="text-gray-700 font-semibold hover:text-[#CA3D26]"><a href="#">+91
+                            8128128181</a></span>
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-[#CA3D26] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a32e1c]">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button - Hidden on xl screens -->
+                <button id="toggleOpen"
+                    class='max-xl:block hidden bg-[#FDF4E4] text-[#CA3D26] px-3 py-3 rounded-md hover:bg-[#a32e1c] hover:text-[#FDF4E4]'>
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+        <!-- Hero Content -->
+        <div class="relative w-full h-[600px] bg-cover bg-center"
+            style="background-image: linear-gradient(90deg, #CA3D26 0%, rgba(202, 61, 38, 0) 100%), url('./Images/Contact_us/contactbanner.png');">
+            <!-- Content Container -->
+            <div>
+                <div class="absolute inset-0 flex items-center justify-start px-10">
+                    <div class="container mx-auto px-4">
+                        <!-- Blog Heading -->
+                        <h1 class="text-[#FEC007] font-bold font-dancing mb-4" style="font-size: 60px; font-family: 'Dancing Script'">Contact Us</h1>
+                        <!-- Image Below Heading -->
+                        <img src="./images/Contact_us/hero1.png" alt="Blog Icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  
+    
+    <!-- discussing start -->
+    <div class="container mx-auto py-10 px-4">
+        <div class="mt-20">
+            <p class="text-[60px] leading-[99px] font-bold max-md:text-[40px] max-md:leading-[60px]"> 
+                <span class="text-[#CA3D26]" style="font-family: 'Dancing Script'">Interested</span> in discussing?
+            </p>
+            <p class="text-[#616161] text-[18px] font-medium leading-[36.09px] pe-20 max-md:pe-5">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas human.</p>
+        </div>
+        <div class="relative">
+            <!-- Grid Container -->
+            <div class="grid lg:grid-cols-2 gap-10 mt-10">
+                <!-- Left Column: Form -->
+                <div class="relative">
+                    <img src="./images/Contact_us/Contact_us1.png" alt="" class="bg-no-repeat absolute top-[90px] left-[-150px] h-[218px] w-[100px] opacity[50%] max-lg:hidden"/>
+                    <form class="mt-16">
+                        <div class="grid md:grid-cols-2 gap-10 mb-10">
+                            <div>
+                                <label class="text-[18px] font-medium">Your Name</label>
+                                <input class="w-full border-b text-[18px] font-medium py-[10px] text-[#616161] focus:outline-none focus:border-b-2 focus:border-[#CA3D26]" type="text" placeholder="Enter Full Name" />
+                            </div>
+                            <div>
+                                <label class="text-[18px] font-medium">Enter Email</label>
+                                <input class="w-full border-b text-[18px] font-medium py-[10px] text-[#616161] focus:outline-none focus:border-b-2 focus:border-[#CA3D26]" type="text" placeholder="Enter Your Email" />
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-10 mb-10">
+                            <div>
+                                <label class="text-[18px] font-medium">Enter Subject</label>
+                                <input class="w-full border-b text-[18px] font-medium py-[10px] text-[#616161] focus:outline-none focus:border-b-2 focus:border-[#CA3D26]" type="text" placeholder="Enter Your Subject" />
+                            </div>
+                            <div>
+                                <label class="text-[18px] font-medium">Enter Mobile Number</label>
+                                <input class="w-full border-b text-[18px] font-medium py-[10px] text-[#616161] focus:outline-none focus:border-b-2 focus:border-[#CA3D26]" type="text" placeholder="Enter Your Number" />
+                            </div>
+                        </div>
+                        <div class="mb-20">
+                            <label class="text-[18px] font-medium">Message</label>
+                            <input class="w-full border-b text-[18px] font-medium py-[10px] text-[#616161] focus:outline-none focus:border-b-2 focus:border-[#CA3D26]" type="text" placeholder="Hi, do you have a moment to talk about!" />
+                        </div>
+                        <a href="#" class="bg-[#CA3D26] text-white py-4 px-16 rounded-lg text-[24px] font-bold leading-[28.18px] inline-block max-md:w-full max-md:text-center">Send</a>
+                    </form>
+                </div>
+
+                <!-- Right Column: Contact Info -->
+                <div class="relative">
+                    <img src="./images/Contact_us/Contact_us2.png" alt="" class="w-[343px] h-[218px] bg-no-repeat absolute top-9 right-[10px] object-cover max-lg:hidden" />
+                    
+                    <div class="bg-[#FDF4E4] w-full max-w-[487px] h-auto  bg-no-repeat mx-auto py-2 xs:min-h[500px]" style="border-radius: 40px;">
+                        <div>
+                            <div class="flex align-center mt-16 max-sm:mt-8">
+                                <div class="flex ms-16 max-sm:ms-8">
+                                    <div class="w-12 h-12 max-sm:w-10 max-sm:h-10 bg-[#CA3D26] rounded-full flex justify-center items-center text-white">
+                                        <i class="fa-solid fa-phone text-[18px]"></i> 
+                                    </div>
+                                    <p class="leading-[25.83px] text-[22px] max-sm:text-[18px] font-bold mt-3 ms-4 max-sm:ms-2">Contact</p>
+                                </div>
+                            </div>
+                            <p class="text-[#616161] font-medium ms-16 max-sm:ms-8 mt-3 max-sm:mt-2 text-[18px] max-sm:text-[16px] border-b border-dashed border-b-2 border-[#616161] pb-5 max-sm:pb-3 w-[300px] max-sm:w-[250px]" style="font-family: 'Raleway'">+91 8128128181</p>
+                        </div>
+                        <div>
+                            <div class="flex align-center mt-16 max-sm:mt-8">
+                                <div class="flex ms-16 max-sm:ms-8">
+                                    <div class="w-12 h-12 max-sm:w-10 max-sm:h-10 bg-[#CA3D26] rounded-full flex justify-center items-center text-white">
+                                        <i class="fa-solid fa-envelope text-[18px]"></i>
+                                    </div>
+                                    <p class="leading-[25.83px] text-[22px] max-sm:text-[18px] font-bold mt-3 ms-4 max-sm:ms-2">Email</p>
+                                </div>
+                            </div>
+                            <p class="text-[#616161] font-medium ms-16 max-sm:ms-8 mt-3 max-sm:mt-2 text-[18px] max-sm:text-[16px] border-b border-dashed border-b-2 border-[#616161] pb-5 max-sm:pb-3 w-[300px] max-sm:w-[250px]" style="font-family: 'Raleway'">alphamaleexports@gmail.com</p>
+                        </div>
+                        <div>
+                            <div class="flex align-center mt-16 max-sm:mt-8 ">
+                                <div class="flex ms-16 max-sm:ms-8">
+                                    <div class="w-12 h-12 max-sm:w-10 max-sm:h-10 bg-[#CA3D26] rounded-full flex justify-center items-center text-white">
+                                        <i class="fa-solid fa-location-dot text-[18px]"></i>
+                                    </div>
+                                    <p class="leading-[25.83px] text-[22px] max-sm:text-[18px] font-bold mt-3 ms-4 max-sm:ms-2">Location</p>
+                                </div>
+                            </div>
+                            <p class="text-[#616161] font-medium ms-16 mb-6 max-sm:ms-8 mt-3 max-sm:mt-2 text-[18px] max-sm:text-[16px] pe-10 max-sm:pe-5 " style="font-family: 'Raleway'">UG-28 ,Indira Lok Complex Piplod Surat Gujarat PIN : 395007</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- discussing end -->
+
+   <!-- Footer Start -->
+   <div
+   style="
+       background-image: url('./Images/Footer-Images/Footer-bg1.png');
+       background-repeat: no-repeat;
+       background-position: center center;
+       background-size: cover;
+       background-color: #ca3d26;
+
+       background-blend-mode: overlay; /* Blend the color and image */
+   "
+>
+   <div class="container mx-auto px-4 py-3">
+       <div class="grid grid-cols-2 md:grid-cols-3 gap-y-4">
+           <div class="flex justify-center items-center flex-col py-4">
+               <img
+                   src="./Images/Footer-Images/Footer-icon-1.png"
+                   alt="footer-img"
+                   class="mb-2"
+               />
+               <p class="text-white font-semibold text-center">Global Exporter</p>
+           </div>
+           <div class="flex justify-center items-center flex-col">
+               <img
+                   src="./Images/Footer-Images/Footer-icon-2.png"
+                   alt="footer-img"
+                   class="mb-2"
+               />
+               <p class="text-white font-semibold text-center">Customer Relation</p>
+           </div>
+           <div class="flex justify-center items-center flex-col col-span-2 md:col-span-1">
+               <img
+                   src="./Images/Footer-Images/Footer-icon-3.png"
+                   alt="footer-img"
+                   class="mt-4 mb:mt-0"
+               />
+               <p class="text-white font-semibold text-center pt-4">Fast Delivery</p>
+           </div>
+       </div>
+   </div>
+</div>
+
+	<!-- Second row start -->
+	<div>
+		<div class="  relative">
+			<div class="container mx-auto px-4 py-6">
+				<div
+				class="grid lg:grid-cols-2 gap-6 md:gap-10 lg:gap-20 xl:gap-40 border-b-2 border-black border-dashed py-10">
+				<!-- Left Section -->
+				<div>
+					<div>
+						<img src="./Images/Footer-Images/Footer-logo.png" alt="logo" class="w-40 md:w-48 lg:w-64" />
+					</div>
+					<p class="text-[16px] md:text-[18px] text-[#616161] font-medium my-5 leading-[28px] md:leading-[36.09px]"
+						style="font-family: 'Raleway'">
+						"ALPHA MALE EXPORTS" is one of the leading Gujarat
+						india Based company which activating in the field of
+						producing, Supplying and exporting of Basmati Rice,
+						Non Basmati Rice, Brown Rice, Indian Spices, Maize
+						etc agrituture products from the Gujarat India, we
+						are bulk exporters of agriculture product.
+					</p>
+				</div>
+
+				<!-- Right Section -->
+				<div class="flex flex-col md:items-start pt-2 md:pt-2 lg:pt-16">
+					<!-- Contact and Email -->
+					<div class="flex flex-row md:flex-row gap-10 md:gap-20 lg:gap-14">
+						<!-- Contact -->
+						<div>
+							<div class="flex items-center">
+								<img src="./Images/Footer-Images/Contact.png" alt="contact-icon"
+									class="w-8 md:w-10 h-8 md:h-10" />
+								<h2 class="py-2 px-2 font-bold text-lg md:text-xl" style="font-family: 'Raleway'">
+									Contact
+								</h2>
+							</div>
+							<p class="text-[#616161] font-semibold md:font-medium text-sm md:text-[18px] py-4"
+								style="font-family: 'Raleway'">
+								+91 8128128123
+							</p>
+						</div>
+
+						<!-- Email -->
+						<div>
+							<div class="flex items-center">
+								<img src="./Images/Footer-Images/Email.png" alt="email-icon"
+									class="w-8 md:w-10 h-8 md:h-10" />
+								<h2 class="py-2 px-2 font-bold text-lg md:text-xl" style="font-family: 'Raleway'">
+									Email
+								</h2>
+							</div>
+							<p class="text-[#616161] text-sm md:text-[18px] font-semibold md:font-medium py-4" style="
+										word-break: break-all;
+										font-family: 'Raleway';
+									">
+								alphamaleexports@gmail.com
+							</p>
+						</div>
+					</div>
+
+					<!-- Location -->
+					<div class="py-6">
+						<div class="flex">
+							<img src="./Images/Footer-Images/Location.png" alt="location-icon"
+								class="w-8 md:w-10 h-8 md:h-10" />
+							<h2 class="px-2 font-bold text-lg md:text-xl" style="font-family: 'Raleway'">
+								Location
+							</h2>
+						</div>
+						<p class="text-[#616161] text-sm md:text-[18px] font-semibold md:font-medium mt-3"
+							style="font-family: 'Raleway'">
+							UG-28 ,Indira Lok Complex Piplod Surat Gujarat
+							PIN : 395007
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Navbar Section Start -->
+			<div class="grid md:grid-cols-2 gap-6 md:gap-10 lg:gap-20 xl:gap-40 py-10" style="font-family: 'Raleway'">
+				<div>
+					<h1 class="font-bold text-lg md:text-xl">Our Link</h1>
+					<ul
+						class="flex flex-row gap-4 md:gap-[10px] lg:gap-[30px] xl:gap-[50px] my-4 md:my-4 text-[#616161] text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-semibold md:font-medium">
+						<li>Home</li>
+						<li>About Us</li>
+						<li>Product</li>
+						<li>Blog</li>
+						<li>Contact Us</li>
+					</ul>
+				</div>
+
+				<div>
+					<h1 class="font-bold text-lg md:text-xl">Product</h1>
+					<ul
+						class="flex flex-row gap-4 md:gap-[10px] lg:gap-[30px] xl:gap-[50px] my-4 md:my-4 text-[#616161] text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-semibold md:font-medium">
+						<li>Bashmati Rice</li>
+						<li>Spices</li>
+						<li>Maize</li>
+						<li>Non Basmati Rice</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Navbar Section End -->
+			</div>
+			 
+			<div class="float-div absolute bottom-0 right-0 transform rotate-180">
+				<img src="./Images/HomePage/bg-footer.png" alt="">
+			</div>
+		</div>
+	</div>
+
+<!-- Second row end -->
+
+<!-- Copyright Section Start -->
+<div style="font-family: 'Raleway'" class="font-medium bg-[#FDF4E4]">
+   <div class="container mx-auto px-4 py-6 md:py-10">
+       <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+           <!-- Left Column: Copyright Text -->
+           <p class="text-[#616161] text-[15px] font-semibold md:text-[16px] md:font-medium text-center md:text-left">
+               © Copyright 2022 by Signal Bytes Technologies
+           </p>
+
+           <!-- Right Column: Social Media Icons -->
+           <div class="flex justify-center md:justify-end gap-4">
+               <img
+                   src="./Images/Footer-Images/Facebook-icon.png"
+                   alt="Facebook-logo"
+                   class="w-10 h-10 md:w-10 md:h-10"
+               />
+               <img
+                   src="./Images/Footer-Images/twitter-icon.png"
+                   alt="Twitter-logo"
+                   class="w-10 h-10 md:w-10 md:h-10"
+               />
+               <img
+                   src="./Images/Footer-Images/Youtube-icon.png"
+                   alt="Youtube-logo"
+                   class="w-10 h-10 md:w-10 md:h-10"
+               />
+               <img
+                   src="./Images/Footer-Images/Instagram-icon.png"
+                   alt="Instagram-logo"
+                   class="w-10 h-10 md:w-10 md:h-10"
+               />
+           </div>
+       </div>
+   </div>
+</div>
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript">
+        var toggleOpen = document.getElementById('toggleOpen');
+        var toggleClose = document.getElementById('toggleClose');
+        var collapseMenu = document.getElementById('collapseMenu');
+
+        function handleClick() {
+            if (collapseMenu.style.display === 'block') {
+                collapseMenu.style.display = 'none';
+            } else {
+                collapseMenu.style.display = 'block';
+            }
+        }
+
+        toggleOpen.addEventListener('click', handleClick);
+        toggleClose.addEventListener('click', handleClick);
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!toggleOpen.contains(e.target) && !collapseMenu.contains(e.target)) {
+                collapseMenu.style.display = 'none';
+            }
+        });
+    </script>
+
+    <script>
+        // Get current page URL
+        const currentPage = window.location.pathname.split('/').pop();
+        
+        // Function to set active state
+        function setActiveNavLink() {
+            // Remove all active states first
+            document.querySelectorAll('.active-nav-link').forEach(link => {
+                link.classList.remove('lg:after:w-full');
+                link.classList.add('lg:after:w-0', 'lg:hover:after:w-full');
+            });
+
+            // Set active state based on current page
+            switch(currentPage.toLowerCase()) {
+                case 'home.html':
+                    document.getElementById('homeLink').classList.add('lg:after:w-full');
+                    document.getElementById('homeLink').classList.remove('lg:after:w-0', 'lg:hover:after:w-full');
+                    break;
+                case 'about.html':
+                    document.getElementById('aboutLink').classList.add('lg:after:w-full');
+                    document.getElementById('aboutLink').classList.remove('lg:after:w-0', 'lg:hover:after:w-full');
+                    break;
+                case 'product.html':
+                    document.getElementById('productLink').classList.add('lg:after:w-full');
+                    document.getElementById('productLink').classList.remove('lg:after:w-0', 'lg:hover:after:w-full');
+                    break;
+                case 'contact-us.html':
+                    document.getElementById('contactLink').classList.add('lg:after:w-full');
+                    document.getElementById('contactLink').classList.remove('lg:after:w-0', 'lg:hover:after:w-full');
+                    break;
+                // Add more cases for other pages
+            }
+        }
+
+        // Call the function when page loads
+        document.addEventListener('DOMContentLoaded', setActiveNavLink);
+    </script>
+
+</body>
+</html>
